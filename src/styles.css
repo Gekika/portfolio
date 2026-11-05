@@ -1,3 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+@theme {
+  --color-paper: #f6f3f9;
+  --color-ink: #2b2238;
+  --color-muted: #776e86;
+  --color-mist: #e4dcef;
+  --color-accent: #6d4c9f;
+
+  --font-display: 'Archivo', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-hand: 'Caveat', cursive;
+}
+
+body {
+  background-color: var(--color-paper);
+  background-image:
+    linear-gradient(to right, var(--color-mist) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-mist) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
