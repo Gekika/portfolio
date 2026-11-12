@@ -1,3 +1,8 @@
-<app-hero />
+@defer (on idle) {
+  <app-globe-hero />
+} @placeholder {
+  <section class="h-svh min-h-[600px] bg-ink"></section>
+}
+
 <app-hello />
 <router-outlet />
