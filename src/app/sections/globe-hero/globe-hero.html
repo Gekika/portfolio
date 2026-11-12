@@ -1,3 +1,44 @@
 <section class="relative h-svh min-h-[600px] overflow-hidden bg-ink">
   <div #globe class="absolute inset-0"></div>
+
+  <!-- On phones the text sits over the globe; this fade keeps it readable -->
+  <div
+    class="pointer-events-none absolute inset-x-0 bottom-0 h-2/3 bg-linear-to-t from-ink via-ink/80 to-transparent md:hidden"
+  ></div>
+
+  <div class="pointer-events-none absolute inset-x-0 bottom-16 md:inset-y-0 md:flex md:items-center">
+    <div
+      class="mx-auto w-full max-w-6xl px-6 transition duration-1000 ease-out"
+      [class.opacity-0]="!arrived()"
+      [class.translate-y-6]="!arrived()"
+    >
+      <p class="font-mono text-xs tracking-widest text-lilac">1.29° S · 36.82° E · NAIROBI</p>
+      <h1 class="mt-4 font-display text-5xl leading-none font-black font-stretch-expanded text-paper md:text-7xl">
+        Hi, I'm<br />George Karanja.
+      </h1>
+      <p class="mt-5 text-lg text-mist">I'm a software engineer.</p>
+
+      <nav aria-label="Links" class="pointer-events-auto mt-8 flex flex-wrap gap-3">
+        <a href="#about" class="rounded-full bg-lilac px-5 py-2 text-sm font-semibold text-ink transition hover:bg-paper">
+          About me
+        </a>
+        <a
+          href="https://github.com/Gekika"
+          target="_blank"
+          rel="noopener"
+          class="rounded-full border border-lilac/50 px-5 py-2 text-sm text-paper transition hover:border-paper"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/george-karanja-"
+          target="_blank"
+          rel="noopener"
+          class="rounded-full border border-lilac/50 px-5 py-2 text-sm text-paper transition hover:border-paper"
+        >
+          LinkedIn
+        </a>
+      </nav>
+    </div>
+  </div>
 </section>

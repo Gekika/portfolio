@@ -8,4 +8,5 @@ import { Component, input } from '@angular/core';
 })
 export class SectionTitle {
   readonly label = input.required<string>();
+  readonly index = input<string>();
 }

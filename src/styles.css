@@ -9,6 +9,8 @@
   --color-mist: #e4dcef;
   --color-accent: #6d4c9f;
   --color-lilac: #b9a3e3;
+  --color-haze: #a99fbb; 
+  --color-surface: #352a46;
 
   --font-display: 'Archivo', sans-serif;
   --font-sans: 'Inter', sans-serif;
@@ -16,9 +18,10 @@
 }
 
 body {
-  background-color: var(--color-paper);
+  background-color: var(--color-ink);
+  color: var(--color-paper);
   background-image:
-    linear-gradient(to right, var(--color-mist) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--color-mist) 1px, transparent 1px);
-  background-size: 24px 24px;
+    linear-gradient(to right, rgb(185 163 227 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(185 163 227 / 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
 }

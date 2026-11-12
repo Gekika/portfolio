@@ -1,0 +1,36 @@
+<section id="projects" class="mx-auto max-w-6xl px-6 py-28">
+  <app-section-title index="03" label="Projects" />
+
+  <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    @for (project of projects; track project.title) {
+      <article
+        class="flex flex-col overflow-hidden rounded-2xl border border-lilac/15 bg-surface transition hover:-translate-y-1 hover:border-lilac/40"
+      >
+        @if (project.image) {
+          <img [src]="project.image" [alt]="project.title + ' screenshot'" class="aspect-video w-full object-cover" />
+        } @else {
+          <div
+            class="flex aspect-video items-center justify-center bg-linear-to-br from-accent/40 to-ink font-display text-5xl font-black font-stretch-expanded text-lilac/60"
+          >
+            {{ project.title[0] }}
+          </div>
+        }
+
+        <div class="flex flex-1 flex-col p-6">
+          <h3 class="font-display text-lg font-bold text-paper">{{ project.title }}</h3>
+          <p class="mt-2 flex-1 text-sm leading-relaxed text-haze">{{ project.summary }}</p>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            @for (tag of project.tags; track tag) {
+              <li class="rounded-full bg-ink/60 px-2.5 py-0.5 font-mono text-[11px] text-lilac">{{ tag }}</li>
+            }
+          </ul>
+          @if (project.link) {
+            <a [href]="project.link" target="_blank" rel="noopener" class="mt-5 text-sm font-semibold text-lilac hover:text-paper">
+              View project →
+            </a>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>

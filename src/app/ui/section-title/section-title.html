@@ -1,3 +1,6 @@
-<h2 class="font-display font-black font-stretch-expanded uppercase text-2xl tracking-tight text-ink">
+@if (index()) {
+  <p class="font-mono text-xs tracking-widest text-lilac">{{ index() }}</p>
+}
+<h2 class="mt-2 font-display text-3xl font-black font-stretch-expanded uppercase tracking-tight text-paper md:text-4xl">
   {{ label() }}
 </h2>
