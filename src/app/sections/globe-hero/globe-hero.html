@@ -1,5 +1,7 @@
-<section class="relative h-svh min-h-[600px] overflow-hidden bg-ink">
-  <div #globe class="absolute inset-0"></div>
+<section class="relative h-svh min-h-[600px] overflow-hidden">
+  @defer (on immediate) {
+    <app-globe-canvas />
+  }
 
   <!-- On phones the text sits over the globe; this fade keeps it readable -->
   <div
@@ -7,11 +9,7 @@
   ></div>
 
   <div class="pointer-events-none absolute inset-x-0 bottom-16 md:inset-y-0 md:flex md:items-center">
-    <div
-      class="mx-auto w-full max-w-6xl px-6 transition duration-1000 ease-out"
-      [class.opacity-0]="!arrived()"
-      [class.translate-y-6]="!arrived()"
-    >
+    <div class="mx-auto w-full max-w-6xl px-6 transition duration-1000 ease-out starting:translate-y-6 starting:opacity-0">
       <p class="font-mono text-xs tracking-widest text-lilac">1.29° S · 36.82° E · NAIROBI</p>
       <h1 class="mt-4 font-display text-5xl leading-none font-black font-stretch-expanded text-paper md:text-7xl">
         Hi, I'm<br />George Karanja.
@@ -31,7 +29,7 @@
           GitHub
         </a>
         <a
-          href="https://www.linkedin.com/in/george-karanja-"
+          href="https://www.linkedin.com/in/george-karanja"
           target="_blank"
           rel="noopener"
           class="rounded-full border border-lilac/50 px-5 py-2 text-sm text-paper transition hover:border-paper"
