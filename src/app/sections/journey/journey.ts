@@ -28,8 +28,18 @@ export class Journey {
       ],
     },
     {
-      period: 'Jul 2025 – Present',
+      period: 'Jul 2025 – May 2026',
       title: 'Service Observability Engineer (Intern)',
+      org: 'M-PESA Africa',
+      points: [
+        'Backend services in Java (Spring Boot) that automate operational processes.',
+        'Dashboards in Dynatrace and Grafana for service health, latency and operational metrics.',
+        'Onboarding new services into monitoring for end-to-end visibility from day one.',
+      ],
+    },
+    {
+      period: 'Jun 2026 – Present',
+      title: 'Service Observability Engineer',
       org: 'M-PESA Africa',
       points: [
         'Backend services in Java (Spring Boot) that automate operational processes.',
