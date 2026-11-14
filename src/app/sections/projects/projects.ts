@@ -24,10 +24,10 @@ export class Projects {
       tags: ['Angular', 'Tailwind', 'Docker', 'GitHub Actions', 'Nginx'],
       link: 'https://github.com/Gekika/portfolio', // remove if the repo is private
     },
-    {
-      title: 'Your next project',
-      summary: 'One or two sentences: what it does, why you built it, and what you learned.',
-      tags: ['Java', 'Spring Boot'],
-    },
+    // {
+    //   title: 'Your next project',
+    //   summary: 'One or two sentences: what it does, why you built it, and what you learned.',
+    //   tags: ['Java', 'Spring Boot'],
+    // },
   ];
 }
