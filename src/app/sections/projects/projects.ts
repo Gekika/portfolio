@@ -24,10 +24,18 @@ export class Projects {
       tags: ['Angular', 'Tailwind', 'Docker', 'GitHub Actions', 'Nginx'],
       link: 'https://github.com/Gekika/portfolio', // remove if the repo is private
     },
+    {
+      title: 'CitizenLense',
+      summary:
+        'A collaborative Data Science Project that we innovated around while in KamiLimu Mentorship Program. We look into how data is collected through USSD and we find meaning from it',
+      tags: ['Python','AI/ML','USSD', 'APIs'],
+      link: 'https://github.com/orgs/CitizenLense', // remove if the repo is private
+    },
     // {
     //   title: 'Your next project',
     //   summary: 'One or two sentences: what it does, why you built it, and what you learned.',
     //   tags: ['Java', 'Spring Boot'],
     // },
+    
   ];
 }
