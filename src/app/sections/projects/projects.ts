@@ -31,11 +31,14 @@ export class Projects {
       tags: ['Python','AI/ML','USSD', 'APIs'],
       link: 'https://github.com/orgs/CitizenLense', // remove if the repo is private
     },
-    // {
-    //   title: 'Your next project',
-    //   summary: 'One or two sentences: what it does, why you built it, and what you learned.',
-    //   tags: ['Java', 'Spring Boot'],
-    // },
+    {
+      title: 'PredatorSense for Linux',
+      summary:
+        'RGB keyboard and Turbo key for my Acer Predator Triton 500 SE (PT516-51s) on Arch Linux: per-zone colours, 7 lighting effects, settings restored at boot and after sleep, a working Turbo key (max fans + performance mode), and a small GNOME app to control it all.',
+      tags: ['Python','shell'],
+      link: 'https://github.com/Gekika/predator-sense-linux', // remove if the repo is private
+    },
+    
     
   ];
 }
