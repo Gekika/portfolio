@@ -10,6 +10,26 @@ import { SectionTitle } from '../../ui/section-title/section-title';
 export class Journey {
   protected readonly milestones = [
     {
+      period: 'Jun 2026 – Present',
+      title: 'Service Observability Engineer',
+      org: 'M-PESA Africa',
+      points: [
+        'Backend services in Java (Spring Boot) that automate operational processes.',
+        'Dashboards in Dynatrace and Grafana for service health, latency and operational metrics.',
+        'Onboarding new services into monitoring for end-to-end visibility from day one.',
+      ],
+    },
+    {
+      period: 'Jul 2025 – May 2026',
+      title: 'Service Observability Engineer (Intern)',
+      org: 'M-PESA Africa',
+      points: [
+        'Backend services in Java (Spring Boot) that automate operational processes.',
+        'Dashboards in Dynatrace and Grafana for service health, latency and operational metrics.',
+        'Onboarding new services into monitoring for end-to-end visibility from day one.',
+      ],
+    },
+    {
       period: 'Mar – Dec 2024',
       title: 'Mentee',
       org: 'KamiLimu',
@@ -25,26 +45,6 @@ export class Journey {
       points: [
         'Intensive training in predictive modelling and data-driven problem solving.',
         'Applied machine learning to log analysis and failure prediction for AIOps.',
-      ],
-    },
-    {
-      period: 'Jul 2025 – May 2026',
-      title: 'Service Observability Engineer (Intern)',
-      org: 'M-PESA Africa',
-      points: [
-        'Backend services in Java (Spring Boot) that automate operational processes.',
-        'Dashboards in Dynatrace and Grafana for service health, latency and operational metrics.',
-        'Onboarding new services into monitoring for end-to-end visibility from day one.',
-      ],
-    },
-    {
-      period: 'Jun 2026 – Present',
-      title: 'Service Observability Engineer',
-      org: 'M-PESA Africa',
-      points: [
-        'Backend services in Java (Spring Boot) that automate operational processes.',
-        'Dashboards in Dynatrace and Grafana for service health, latency and operational metrics.',
-        'Onboarding new services into monitoring for end-to-end visibility from day one.',
       ],
     },
   ];
