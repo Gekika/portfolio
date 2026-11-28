@@ -21,7 +21,7 @@ export class Journey {
     },
     {
       period: 'Jul 2025 – May 2026',
-      title: 'Service Observability Engineer (Intern)',
+      title: 'Service Observability Intern',
       org: 'M-PESA Africa',
       points: [
         'Backend services in Java (Spring Boot) that automate operational processes.',
